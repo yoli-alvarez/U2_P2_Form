@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservación</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid #ccc;
+      }
+
+      th {
+        text-align: center;
+        border: 1px solid #ccc;
+      }
+      td {
+        text-align: left;
+        border: 1px solid #ccc;
+      }
+      button{
+         border-radius: 5px;
+         width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th><h1>Reservación</h1></th>
+      </tr>
+
+      <tr>
+        <td>
+          <form>
+            <fieldset>
+              <legend>Datoas Personales</legend>
+              <p>
+                <label for="nombre">Nombre:</label>
+                <input
+                  type="text"
+                  id="inputName"
+                  name="inputName"
+                  placeholder="Maps"
+                />
+
+                <label for="apellido">Apellidos:</label>
+                <input
+                  type="text"
+                  id="inputLastName"
+                  name="inputLastName"
+                  placeholder="Apellidos"
+                />
+                <label for="telefono">Telefono:</label>
+                <input
+                  type="tel"
+                  id="inputTelefono"
+                  name="inputTelefono"
+                  placeholder="Telefono"
+                />
+                <label for="RFC">RFC:</label>
+                <input
+                  type="text"
+                  id="inputRFC"
+                  name="inputRFC"
+                  placeholder="RFC"
+                />
+              </p>
+            </fieldset>
+            <fieldset>
+              <legend>Dirección</legend>
+              <p>
+                <label for="Calle">Calle:</label>
+                <input
+                  type="text"
+                  id="inputCalle"
+                  name="inputCalle"
+                  placeholder="Gonzalo Sanchez"
+                />
+                <label for="Colonia">Colonia:</label>
+                <input
+                  type="text"
+                  id="inputColonia"
+                  name="inputColonia"
+                  placeholder="Nopalera"
+                />
+                <label for="Numero">Número:</label>
+                <input
+                  type="number"
+                  id="inputNumero"
+                  name="inputNumero"
+                  placeholder="#4"
+                />
+                <label for="CodigoPostal">Código Postal:</label>
+                <input
+                  type="text"
+                  id="inputCodigoPostal"
+                  name="inputCodigoPostal"
+                  placeholder="28001"
+                />
+                <label for="Estado">Estado:</label>
+                <input
+                  type="text"
+                  id="inputEstado"
+                  name="inputEstado"
+                  placeholder="Morelos"
+                />
+              </p>
+            </fieldset>
+            <fieldset>
+              <legend>Idioma</legend>
+              <p>
+                <label for="Idioma">Idioma: </label>
+                <select name="Idioma" id="Idioma">
+                  <option value="Inglés">Inglés</option>
+                  <option value="Español">Español</option>
+                  <option value="Francés">Francés</option>
+                  <option value="Italiano">Italiano</option>
+                  <option value="Portugués">Portugués</option>
+                </select>
+              </p>
+            </fieldset>
+            <fieldset>
+              <legend>Fechas de Reservación</legend>
+              <p>
+                <label for="Fecha de Entrada">Fecha de Entrada: </label>
+                <input
+                  type="date"
+                  id="inputFechaEntrada"
+                  name="inputFechaEntrada"
+                  placeholder="dd/mm/aaaa"
+                />
+              </p>
+              <p>
+                <label for="Fecha de Salida">Fecha de Salida: </label>
+                <input
+                  type="date"
+                  id="inputFechaSalida"
+                  name="inputFechaSalida"
+                  placeholder="dd/mm/aaaa"
+                />
+              </p>
+            </fieldset>
+            <fieldset>
+              <legend>Tipo de Habitación</legend>
+              <p>
+                <input
+                  type="radio"
+                  name="inputRadio"
+                  id="inputRadio1"
+                  value="Sinmple"
+                />
+                <label for="inputRadio1">Simple</label>
+                <input
+                  type="radio"
+                  name="inputRadio"
+                  id="inputRadio2"
+                  value="Duplex"
+                />
+                <label for="inputRadio2">Duplex</label>
+                <input
+                  type="radio"
+                  name="inputRadio"
+                  id="inputRadio3"
+                  value="Premium"
+                />
+                <label for="inputRadio3">Premium</label>
+              </p>
+            </fieldset>
+            <fieldset>
+              <legend>Tipo de Cama</legend>
+              <p>
+                <input
+                  type="radio"
+                  name="inputRadio2"
+                  id="inputRadio4"
+                  value="Matrimonial"
+                />
+                <label for="inputRadio4">Matrimonial</label>
+                <input
+                  type="radio"
+                  name="inputRadio2"
+                  id="inputRadio5"
+                  value="King"
+                />
+                <label for="inputRadio5">King</label>
+                <input
+                  type="radio"
+                  name="inputRadio2"
+                  id="inputRadio6"
+                  value="Queen"
+                />
+                <label for="inputRadio6">Queen</label>
+              </p>
+            </fieldset>
+            <fieldset>
+              <legend>Cantidad de Personas</legend>
+              <p>
+                <label for="Cantidad">Cantidad:</label>
+                <input
+                  type="number"
+                  id="inputCantidad"
+                  name="inputCantidad"
+                  placeholder="Cantidad"
+                />
+              </p>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+            <button type="submit">Cancelar</button>
+
+          </form>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
