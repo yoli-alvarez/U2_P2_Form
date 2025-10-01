@@ -7,13 +7,15 @@
     <style>
       table {
         border-collapse: collapse;
-        width: 100%;
+        width: 80%;
         border: 1px solid #ccc;
+        margin: auto;
       }
 
       th {
         text-align: center;
         border: 1px solid #ccc;
+        background-color: #b59292;
       }
       td {
         text-align: left;
@@ -22,6 +24,9 @@
       button{
          border-radius: 5px;
          width: 30%;
+      }
+      label{
+        margin-left: 0px;
       }
     </style>
   </head>
@@ -99,6 +104,7 @@
                   name="inputCodigoPostal"
                   placeholder="28001"
                 />
+                <p>
                 <label for="Estado">Estado:</label>
                 <input
                   type="text"
@@ -106,6 +112,7 @@
                   name="inputEstado"
                   placeholder="Morelos"
                 />
+                </p>
               </p>
             </fieldset>
             <fieldset>
@@ -131,8 +138,7 @@
                   name="inputFechaEntrada"
                   placeholder="dd/mm/aaaa"
                 />
-              </p>
-              <p>
+              
                 <label for="Fecha de Salida">Fecha de Salida: </label>
                 <input
                   type="date"
@@ -207,9 +213,7 @@
               </p>
             </fieldset>
 
-            <button type="submit">Enviar</button>
-            <button type="submit">Cancelar</button>
-
+            
           </form>
         </td>
       </tr>
